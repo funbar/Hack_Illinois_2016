@@ -7,3 +7,4 @@ Google Maps
 - Organizers overriding a user's map to show specific points.
 - Able to locate utilities for handicap people as well
 - Handles Multi-level buildings
+- User Privileges 
