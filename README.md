@@ -11,3 +11,4 @@ Google Maps
 - Allow users to enter a destination and tag utilities within their vicinity.
 - Incorporate a Flic for user interaction.
 - Crowd-sourced
+- Useful for events at hackathons such as scavenger hunt.
