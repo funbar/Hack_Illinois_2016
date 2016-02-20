@@ -12,3 +12,4 @@ Google Maps
 - Incorporate a Flic for user interaction.
 - Crowd-sourced
 - Useful for events at hackathons such as scavenger hunt.
+- Markers may contain useful notes (ie. Only accessible by ACM members)
