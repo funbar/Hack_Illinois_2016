@@ -10,7 +10,6 @@ Google Maps is the real mvp
 - Handles Multi-level buildings
 - User Privileges
 - Allow users to enter a destination and tag utilities within their vicinity.
-- Incorporate a Flic for user interaction.
 - Crowd-sourced
 - Useful for events at hackathons such as scavenger hunt.
 - Markers may contain useful notes (ie. Only accessible by ACM members)
