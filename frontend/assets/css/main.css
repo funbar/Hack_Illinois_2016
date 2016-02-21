@@ -1,5 +1,16 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
 .theme {
 	height: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 .header {
@@ -10,26 +21,184 @@
 	height: 100%;
 }
 
+.main-content {
+	margin-left: 200px;
+}
 .nav {
 	background: #4D394B;
 	color: #ab9ba9;
 	float: left;
-	width: 300px;
+	width: 200px;
+	position: relative;
 }
 
-.nav .title {
+.nav .header .title {
 	color: #fff;
 	font-size: 1.3em;
 	font-weight: bold;
 }
 
-.main-content {
-	margin-left: 300px;
-
-}
 
 
 #map {
 	width: 100%;
 	height: 100%;
+}
+
+.groups {
+	list-style: none;
+}
+
+.groups li {
+	width: 90%;
+}
+
+.groups li.active {
+	background: #4C9689;	
+}
+
+.groups li.active a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.groups a {
+	text-decoration: none;
+	color: #ab9ba9;
+	line-height: 2em;
+	display: block;
+	margin-right: 2em;
+	padding-left: 1em;
+}
+
+
+.groups-wrapper {
+	margin-top: 2em;
+}
+
+.groups-wrapper .title {
+	padding-left: 1em;
+	margin-bottom: 0.3em;
+}
+
+.invite-wrapper {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 2em;
+}
+
+.invite-wrapper .invite .btn {
+	display: block;
+	background: none;
+	width: 100%;
+	color: #fff;
+}
+
+.invite-wrapper .invite .btn:hover {
+	color: #4C9689;
+	background: none;
+}
+
+.btn-transparent {
+	background: none;	
+}
+
+.btn-transparent:focus, .btn-transparent:active, .btn-transparent:hover {
+	outline: 0 !important;
+	box-shadow: none;
+}
+
+.marker_list {
+	display: inline-block;
+}
+
+.marker_icon {
+    max-width: 100px;
+    padding: 1em;
+}
+
+.error {
+	color: #e74c3c;
+	padding-bottom: 1em;
+}
+
+
+
+
+
+
+/* Slideshow style */
+.splash {
+    position: fixed;
+    background: rgba(255,255,255,0.85);
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.splash-open.splash {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.splash .splash-inner {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,150px);
+    transform: translate3d(0,0,150px);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+
+.splash-open.splash .splash-inner {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.splash .splash-content {
+    width: 660px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -175px 0 0 -330px;
+    font-size: 18px;
+    padding: 3em;
+}
+
+.splash-content h3 {
+	margin-bottom: 1.5em;
+}
+
+
+.btn-outline {
+    margin-top: 40px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    background-color: transparent;
+    width: 250px;
+    font-weight: 300;
+}
+.btn-outline:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.splash .exit {
+	font-size: 3em;
 }

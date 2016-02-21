@@ -1,1 +1,34 @@
-<p>hello</p>
+<section class="nav theme">
+	<div class="header">
+		<div class="row">
+			<div class="col-md-12">
+				<a ui-sref="channel"><span class="title">{{ event.name }}</span></a>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="groups-wrapper">
+		<div class="title">GROUPS</div>
+
+		<ul class="groups">
+			<li ng-repeat="(key, value) in event.roles" ng-class="navClass('{{ key }}')">
+				<a ui-sref="group({groupId:key})">{{ key }}</a>
+			</li>
+		</ul>
+	</div>
+
+	<section class="invite-wrapper">
+		<div class="invite">
+			<button class="btn" ng-click="invite()">+ Invite People</button>
+		</div>
+	</section>
+
+</section>
+
+
+<section class="main-content theme">
+	<ng-map id="map" class="theme" default-style="false" center="[{{event.lat}}, {{event.long}}]" zoom="14" on-click="addMarker()">
+		<marker id='{{ marker.id }}' position="[{{marker.lat}}, {{marker.long}}]" icon="{{ icons_mk[marker.type] }}" ng-repeat="marker in  markers"></marker>
+	</ng-map>
+</section>

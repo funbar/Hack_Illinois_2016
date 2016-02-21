@@ -1,0 +1,8 @@
+<div class="close"><button class="btn btn-transparent" ng-click="$close()"><i class="material-icons exit">close</i></button></div>
+<div class="splash-content">
+	<form>
+		<ul ng-repeat="(key, value) in icons" class="marker_list">
+			<li><a href ng-click="addMarker(key)"><img class="marker_icon" ng-src="{{ value }}"></a></li>			
+		</ul>
+	</form>
+</div>

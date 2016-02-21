@@ -1,0 +1,14 @@
+<div class="close"><button class="btn btn-transparent" ng-click="$close()"><i class="material-icons exit">close</i></button></div>
+<div class="splash-content">
+	<h3>Create a new group to interact with!</h3>	
+	<form>
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control" name="name" ng-model="group.name" placeholder="Hackers" required>
+		</div>
+
+		<div class="error">{{ error.message }}</div>
+
+		<button type="submit" class="btn" ng-click="createGroup()">Give it Life</button>
+	</form>
+</div>

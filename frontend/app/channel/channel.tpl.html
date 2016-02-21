@@ -8,17 +8,21 @@
 		</div>
 	</div>
 
-	<ul>
-		<li ng-repeat="(key, value) in event.roles">
-			<a ui-sref="channel.group({groupId:key})">{{ key }}</a>
-		</li>
-	</ul>
+	<div class="groups-wrapper">	
+		<div class="title">GROUPS <button class="btn btn-transparent" ng-click="newGroup()"><i class="material-icons">add_circle_outline</i></button></div>
+		<ul class="groups">
+			<li ng-repeat="(key, value) in event.roles">
+				<a ui-sref="group({groupId:key})">{{ key }}</a>
+			</li>
+		</ul>
+	</div>
+
 </section>
 
 
 <section class="main-content theme">
-	<ng-map id="map" class="theme" default-style="false" center="{{ event.center }}" zoom="14" on-click="addMarker()">
-		<marker id='{{ marker.id }}' position="{{ marker.position }}" ng-repeat="marker in  markers"></marker>
+	<ng-map id="map" class="theme" default-style="false" center="[{{event.lat}}, {{event.long}}]" zoom="14" on-click="addMarker()">
+		<marker id='{{ marker.id }}' position="[{{marker.lat}}, {{marker.long}}]" icon="{{ icons_mk[marker.type] }}" ng-repeat="marker in  markers"></marker>
 	</ng-map>
 </section>
 
