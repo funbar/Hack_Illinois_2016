@@ -1,5 +1,6 @@
 # Hack_Illinois_2016
-Google Maps
+Google Maps is the real mvp
+- A location based application that helps hopelessly lost, wandering souls navigate with the most ease through unfamiliar territory.
 
 # Key Features
 
