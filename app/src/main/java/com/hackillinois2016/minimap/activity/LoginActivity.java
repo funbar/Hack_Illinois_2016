@@ -9,6 +9,9 @@ import android.widget.Button;
 import com.firebase.client.Firebase;
 import com.hackillinois2016.minimap.R;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by bburton on 2/20/16.
  */
@@ -22,11 +25,6 @@ public class LoginActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login);
-
-        Firebase.setAndroidContext(this);
-
-        Firebase myFirebaseRef = new Firebase("https://blistering-heat-1288.firebaseio.com/");
-        myFirebaseRef.child("message").setValue("Do you have data? You'll love Firebase.");
 
         mLoginButton = (Button)findViewById(R.id.button_login);
 

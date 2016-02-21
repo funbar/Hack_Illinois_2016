@@ -37,6 +37,9 @@
             android:name=".activity.DetailEditActivity"
             android:label="Details">
         </activity>
+        <activity android:name=".activity.CreateSpotActivity">
+
+        </activity>
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

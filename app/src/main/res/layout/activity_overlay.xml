@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Select an icon that best describes what you&apos;ve found."
+            android:id="@+id/textView2"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/choice_grid">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.hackillinois2016.minimap.view.CircularShape
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/button_hardware"
+                    android:src="@drawable/hardware"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp" />
+                <com.hackillinois2016.minimap.view.CircularShape
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/button_opensource"
+                    android:src="@drawable/opensource"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp" />
+
+                <com.hackillinois2016.minimap.view.CircularShape
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/button_software"
+                    android:src="@drawable/software"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hackillinois2016.minimap.view.CircularShape
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/button_food"
+                    android:src="@drawable/food"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp" />
+
+                <com.hackillinois2016.minimap.view.CircularShape
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/button_stairs"
+                    android:src="@drawable/stairs"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp" />
+                <com.hackillinois2016.minimap.view.CircularShape
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/button_bathroom"
+                    android:src="@drawable/bathroom"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp" />
+            </TableRow>
+        </TableLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_info"
+            android:lines="5"
+            android:hint="Enter information here. Please be precise!"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="top" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/button_submit" />
+
+    </LinearLayout>
+</ScrollView>
