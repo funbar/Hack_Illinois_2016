@@ -13,3 +13,5 @@ Google Maps
 - Crowd-sourced
 - Useful for events at hackathons such as scavenger hunt.
 - Markers may contain useful notes (ie. Only accessible by ACM members)
+- (SmartWatch) Suggest: gives alerts to user of utilities nearby.
+- (SmartWatch) Demand: can be used to mark spot on map
