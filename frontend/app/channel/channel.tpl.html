@@ -1,0 +1,27 @@
+<section class="nav theme">
+	<div class="header">
+		<div class="row">
+			<div class="col-md-12">
+				<span class="title">{{ event.name }}</span>
+			</div>
+			
+		</div>
+	</div>
+
+	<ul>
+		<li ng-repeat="(key, value) in event.roles">
+			<a ui-sref="channel.group({groupId:key})">{{ key }}</a>
+		</li>
+	</ul>
+</section>
+
+
+<section class="main-content theme">
+	<ng-map id="map" class="theme" default-style="false" center="{{ event.center }}" zoom="14" on-click="addMarker()">
+		<marker id='{{ marker.id }}' position="{{ marker.position }}" ng-repeat="marker in  markers"></marker>
+	</ng-map>
+</section>
+
+
+
+
