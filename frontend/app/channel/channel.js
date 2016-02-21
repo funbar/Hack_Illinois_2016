@@ -2,7 +2,8 @@ angular.module( 'ngHacks.channel', [
     'ngMap',
     'ngAnimate',
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'anim-in-out'
 ])
 
 .config(function config( $stateProvider ) {
@@ -17,18 +18,22 @@ angular.module( 'ngHacks.channel', [
 
 
 
-.controller('ChannelCtrl', ['$scope', '$state', 'icons', 'icons_mk' ,'DBevents', 'DBmarkers', '$firebaseObject', '$firebaseArray', 'NgMap', '$uibModal',
-	function ($scope, $state, icons, icons_mk, DBevents, DBmarkers, $firebaseObject, $firebaseArray, NgMap , $uibModal) {	
+.controller('ChannelCtrl', ['$scope', '$state', 'icons', 'icons_mk' , 'DBurl', 'DBevents', 'DBmarkers', '$firebaseObject', '$firebaseArray', 'NgMap', '$uibModal',
+	function ($scope, $state, icons, icons_mk, DBurl, DBevents, DBmarkers, $firebaseObject, $firebaseArray, NgMap , $uibModal) {	
 	
 	var eventId = "hackillinois";
 	var ref_markers = new Firebase(DBmarkers);
 	var ref_event = new Firebase(DBevents + eventId);
 	var ref_roles = new Firebase(DBevents + eventId + '/roles');
+	
+
+
 
 	$scope.icons = icons;
 	$scope.icons_mk = icons_mk;
 	$scope.event = $firebaseObject(ref_event);
 	$scope.markers = $firebaseArray(ref_markers);
+	
 	$scope.roles = $firebaseObject(ref_roles);
 	$scope.group = {};
 	$scope.group_modal = {};

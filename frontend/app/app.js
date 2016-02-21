@@ -4,7 +4,8 @@ angular
 		'ngHacks.group',
 		'firebase',
 		'ui.router',
-		'ngAnimate'
+		'ngAnimate',
+		'anim-in-out'
 	])
 	.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise( '/channel' );

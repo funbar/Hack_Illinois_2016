@@ -6,18 +6,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/css/anim-in-out.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<script data-require="chance@*" data-semver="0.5.3" src="http://chancejs.com/chance.min.js"></script>
 </head>
 <body class="theme">
 	<div class="page-wrapper">
-		<div ui-view="" class="theme"></div>
+		<div ui-view="" class="theme anim-in-out" data-anim-speed="300"></div>
 	</div>
 
 	<script type="text/javascript" src="./vendor/js/angular.min.js"></script>
 	<script type="text/javascript" src="./vendor/js/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="./vendor/js/angular-animate.min.js"></script>
 	<script type="text/javascript" src="./vendor/js/ui-bootstrap-tpls-1.1.2.min.js"></script>
+	<script type="text/javascript" src="./vendor/js/anim-in-out.js"></script>
 	<script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>
 	<script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
 

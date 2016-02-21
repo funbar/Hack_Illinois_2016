@@ -30,5 +30,6 @@
 <section class="main-content theme">
 	<ng-map id="map" class="theme" default-style="false" center="[{{event.lat}}, {{event.long}}]" zoom="14" on-click="addMarker()">
 		<marker id='{{ marker.id }}' position="[{{marker.lat}}, {{marker.long}}]" icon="{{ icons_mk[marker.type] }}" ng-repeat="marker in  markers"></marker>
+		<marker id='{{ marker_pv.id }}' position="[{{marker_pv.lat}}, {{marker_pv.long}}]" icon="{{ icons_mk[marker_pv.type] }}" ng-repeat="marker_pv in  markers_pv"></marker>
 	</ng-map>
 </section>
