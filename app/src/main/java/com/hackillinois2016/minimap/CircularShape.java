@@ -73,6 +73,7 @@ public class CircularShape extends ImageView{
 
             return lastOutput;
         }
-
+        return lastBitmap;
     }
+
 }

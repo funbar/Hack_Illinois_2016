@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        roundImage = (ImageView)findViewById(R.id.circular_view);
+        roundImage = (ImageView)findViewById(R.id.roundImage);
         /*
         "toilet" is a picture that needs to be added into one of our folders
          */
