@@ -29,7 +29,7 @@ angular
 		'2': './assets/icons/software.png',
 		'3': './assets/icons/food.png',
 		'4': './assets/icons/stairs.png',
-		'5': './assets/icons/redbathroom.gif'
+		'5': './assets/icons/restroom.png'
 	})
 
 	.constant('icons_mk', {
@@ -38,7 +38,7 @@ angular
 		'2': './assets/icons/mk_software.png',
 		'3': './assets/icons/mk_food.png',
 		'4': './assets/icons/mk_stairs.png',
-		'5': './assets/icons/mk_redbathroom.gif'
+		'5': './assets/icons/mk_restroom.png'
 	})
 	
 	.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {

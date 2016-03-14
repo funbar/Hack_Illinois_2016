@@ -45,19 +45,6 @@ angular.module( 'ngHacks.group', [
 		});
 	});
 
-	/*
-	ref_group_markers_filtered.child("markers_proto").orderByChild('scope').equalTo('private').on('child_added', function(snapshot) {
-		var markerKey = snapshot.key();
-		var markerVal = snapshot.val();
-		var path = "events/" + $scope.eventId + "/roles/" + $scope.groupId + "/markers/" + markerKey;
-		ref_group_markers_filtered.child(path).equalTo(markerKey).once('value', function(snapshot) {
-			private_markers[markerKey] = markerVal;
-			console.log(markerKey, markerVal, path);
-		});
-	});
-	*/
-
-
 	$scope.event = $firebaseObject(ref_event);
 	$scope.markers = $firebaseArray(ref_markers);
 	$scope.markers_pv = private_markers;
@@ -69,9 +56,6 @@ angular.module( 'ngHacks.group', [
 	});
 
 	$scope.addMarker = function(e){
-		console.log($scope.markers);
-		console.log($scope.markers_pv);
-
 		var modalInstance = $uibModal.open({
 			animation: true,
 			backdrop: false,
@@ -88,6 +72,17 @@ angular.module( 'ngHacks.group', [
 		}); 	
 	};
 
+	$scope.invite = function(){
+		var modalInstance = $uibModal.open({
+			animation: true,
+			backdrop: false,
+			templateUrl: 'app/common/invite-content.tpl.html',
+			windowTemplateUrl: 'app/common/invite-index.tpl.html',
+			controller: function(){
+				console.log("ASD");
+			}
+		}); 
+	};
 
 	$scope.navClass = function (page) {
         var currentRoute = $location.path().substring(7) || 'home';
