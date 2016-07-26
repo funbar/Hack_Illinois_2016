@@ -1,5 +1,5 @@
 <br>
-<h1><p align="center"><a href="http://devpost.com/software/manimap" target="_blank">Manimap</a></p></h1>
+<h1><p align="center"><a href="http://devpost.com/software/manimap" target="_blank">Minimap</a></p></h1>
 
 <p align="center">
   <a href="http://hackillinois2016s.devpost.com/"><b>Hack Illinois 2016</b></a>
