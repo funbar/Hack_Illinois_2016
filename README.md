@@ -7,7 +7,6 @@
 
 <p align="center">
 <br>
-|
 <b><a href="#inspiration"> Inspiration </a></b>|
 <b><a href="#what-it-does"> What it does </a></b>|
 <b><a href="#how-its-built"> How its built </a></b>
